@@ -1,16 +1,32 @@
-# React + Vite
+# Rečnik engleskog jezika
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mala React aplikacija za pretragu definicija, izgovora i primera upotrebe engleskih reči, koristeći [Free Dictionary API](https://dictionaryapi.dev/).
 
-Currently, two official plugins are available:
+## Fičeri
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Pretraga reči (klikom na dugme ili Enter)
+- Prikaz definicija grupisanih po vrsti reči (imenica, glagol...)
+- Audio izgovor reči (kad je dostupan)
+- Istorija poslednjih 5 pretraga, sa mogućnošću brisanja
+- Loading i error stanja
 
-## React Compiler
+## Tech stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (Vite)
+- Fetch API
+- Free Dictionary API (`https://api.dictionaryapi.dev`)
 
-## Expanding the ESLint configuration
+## Pokretanje lokalno
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/sanjaaas/recnik_engleskog_jezika.git
+cd recnik_engleskog_jezika
+npm install
+npm run dev
+```
+
+Aplikacija se pokreće na `http://localhost:5173`.
+
+## Demo
+
+_(link nakon deploy-a)_
